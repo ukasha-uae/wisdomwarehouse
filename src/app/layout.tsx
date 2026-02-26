@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'DailyGlimpse | School Communication',
-  description: 'Sharing daily moments between teachers and parents.',
+  title: 'Maplewood Academy | Parent-Teacher Portal',
+  description: 'The official communication bridge for Maplewood Academy parents and teachers.',
 };
 
 export default function RootLayout({

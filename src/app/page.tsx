@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Camera, Heart, ShieldCheck, Sparkles, GraduationCap } from "lucide-react";
+import { Camera, Heart, ShieldCheck, MapPin, Phone, Mail, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -11,24 +11,24 @@ export default function Home() {
       {/* Hero Section */}
       <header className="container mx-auto px-4 pt-20 pb-16 text-center">
         <div className="inline-flex items-center justify-center p-3 mb-8 bg-primary/10 rounded-2xl">
-          <Camera className="h-8 w-8 text-primary" />
+          <GraduationCap className="h-10 w-10 text-primary" />
         </div>
         <h1 className="text-5xl md:text-7xl font-headline font-bold text-foreground mb-6 leading-tight">
-          Every Moment <br /><span className="text-primary italic">Worth Sharing.</span>
+          Maplewood Academy <br /><span className="text-primary italic">Parent Portal.</span>
         </h1>
         <p className="max-w-2xl mx-auto text-xl text-muted-foreground mb-10 leading-relaxed font-body">
-          The ultimate communication bridge for teachers and parents. Share daily glimpses of learning, growth, and joy at school.
+          Connecting our classroom to your home. Stay updated with your child's daily learning, growth, and joy at Maplewood Academy.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link href="/login?role=teacher">
-            <Button size="lg" className="h-14 px-8 text-lg font-bold gap-2 rounded-full">
-              <GraduationCap className="h-5 w-5" /> I'm a Teacher
+            <Button size="lg" className="h-14 px-8 text-lg font-bold gap-2 rounded-full shadow-lg hover:shadow-xl transition-all">
+              <GraduationCap className="h-5 w-5" /> Teacher Login
             </Button>
           </Link>
           <Link href="/login?role=parent">
-            <Button size="lg" variant="outline" className="h-14 px-8 text-lg font-bold gap-2 rounded-full border-primary text-primary hover:bg-primary/5">
-              <Heart className="h-5 w-5" /> I'm a Parent
+            <Button size="lg" variant="outline" className="h-14 px-8 text-lg font-bold gap-2 rounded-full border-primary text-primary hover:bg-primary/5 shadow-sm">
+              <Heart className="h-5 w-5" /> Parent Login
             </Button>
           </Link>
         </div>
@@ -37,47 +37,95 @@ export default function Home() {
       {/* Features Grid */}
       <section className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="border-none shadow-sm bg-accent/5">
+          <Card className="border-none shadow-sm bg-primary/5">
             <CardContent className="pt-8 text-center space-y-4">
               <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mx-auto">
-                <Sparkles className="text-accent h-6 w-6" />
+                <Camera className="text-primary h-6 w-6" />
               </div>
-              <h3 className="font-headline font-bold text-xl">AI Assistant</h3>
+              <h3 className="font-headline font-bold text-xl">Daily Glimpses</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Effortlessly write creative and engaging daily updates with our smart AI description tool.
+                Receive real-time photos and updates of your child's activities and classroom adventures.
               </p>
             </CardContent>
           </Card>
           
-          <Card className="border-none shadow-sm bg-primary/5">
+          <Card className="border-none shadow-sm bg-accent/5">
             <CardContent className="pt-8 text-center space-y-4">
               <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mx-auto">
-                <ShieldCheck className="text-primary h-6 w-6" />
+                <ShieldCheck className="text-accent h-6 w-6" />
               </div>
-              <h3 className="font-headline font-bold text-xl">Private & Secure</h3>
+              <h3 className="font-headline font-bold text-xl">Secure Access</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Parents only see posts tagged with their own children, ensuring a safe and focused experience.
+                A private and encrypted environment where you only see updates relevant to your child.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-none shadow-sm bg-accent/5">
+          <Card className="border-none shadow-sm bg-primary/5">
             <CardContent className="pt-8 text-center space-y-4">
               <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mx-auto">
-                <Camera className="text-accent h-6 w-6" />
+                <Mail className="text-primary h-6 w-6" />
               </div>
-              <h3 className="font-headline font-bold text-xl">Visual Stories</h3>
+              <h3 className="font-headline font-bold text-xl">Direct Connection</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Capture and share high-quality photos and videos of classroom adventures instantly.
+                The most efficient way to stay in sync with teachers regarding school events and progress.
               </p>
             </CardContent>
           </Card>
         </div>
       </section>
 
+      {/* School Identity Section */}
+      <section className="bg-white py-16 border-t border-b">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h2 className="text-3xl font-headline font-bold">Visit Maplewood Academy</h2>
+            <div className="space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <MapPin className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-bold">Location</p>
+                  <p className="text-muted-foreground text-sm">123 Education Lane, Maplewood Heights, CA 90210</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <Phone className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-bold">Contact</p>
+                  <p className="text-muted-foreground text-sm">+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <Mail className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-bold">Email</p>
+                  <p className="text-muted-foreground text-sm">info@maplewoodacademy.edu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+             <img 
+               src="https://picsum.photos/seed/school/800/600" 
+               alt="Maplewood Academy Campus" 
+               className="object-cover w-full h-full"
+             />
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="mt-auto py-8 text-center border-t text-sm text-muted-foreground bg-white">
-        &copy; 2024 DailyGlimpse. Empowering Education Through Communication.
+      <footer className="py-8 text-center text-sm text-muted-foreground bg-muted/30">
+        <div className="container mx-auto px-4">
+          <p className="mb-2 font-bold text-foreground">Maplewood Academy</p>
+          <p>&copy; 2024 Maplewood Academy. All Rights Reserved.</p>
+        </div>
       </footer>
     </div>
   );
