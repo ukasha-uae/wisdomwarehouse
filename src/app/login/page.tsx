@@ -2,7 +2,7 @@
 
 import { useSearchParams, useRouter } from "next/navigation";
 import { useState } from "react";
-import { GraduationCap, Loader2 } from "lucide-react";
+import { Warehouse, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -30,11 +30,11 @@ export default function LoginPage() {
         <CardHeader className="text-center pb-2">
           <div className="flex justify-center mb-4">
             <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center shadow-lg">
-              <GraduationCap className="text-primary-foreground h-8 w-8" />
+              <Warehouse className="text-primary-foreground h-8 w-8" />
             </div>
           </div>
-          <CardTitle className="font-headline text-3xl font-bold">Maplewood Academy</CardTitle>
-          <CardDescription>Secure login for our school community</CardDescription>
+          <CardTitle className="font-headline text-3xl font-bold">Wisdom Warehouse</CardTitle>
+          <CardDescription>Secure login for our creative community</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex bg-muted p-1 rounded-lg mb-8">
@@ -55,7 +55,7 @@ export default function LoginPage() {
           <form onSubmit={handleLogin} className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Email Address</Label>
-              <Input id="email" type="email" placeholder="yourname@school.com" required defaultValue={role === 'teacher' ? 'sarah@maplewoodacademy.edu' : 'john@gmail.com'} />
+              <Input id="email" type="email" placeholder="yourname@wisdomwarehouse.ae" required defaultValue={role === 'teacher' ? 'sarah@wisdomwarehouse.ae' : 'john@gmail.com'} />
             </div>
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
@@ -69,7 +69,7 @@ export default function LoginPage() {
           
           <div className="mt-6 text-center text-sm text-muted-foreground">
             Don't have an account? <br />
-            <span className="text-primary font-semibold cursor-pointer">Please contact the School Administration</span>
+            <span className="text-primary font-semibold cursor-pointer">Please contact the Warehouse Administration</span>
           </div>
         </CardContent>
       </Card>

@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Maplewood Academy | Parent-Teacher Portal',
-  description: 'The official communication bridge for Maplewood Academy parents and teachers.',
+  title: 'Wisdom Warehouse | Parent-Teacher Portal',
+  description: 'Where curiosity meets creativity. The official communication bridge for Wisdom Warehouse parents and teachers.',
 };
 
 export default function RootLayout({

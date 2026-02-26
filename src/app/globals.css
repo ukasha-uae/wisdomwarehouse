@@ -4,48 +4,48 @@
 
 @layer base {
   :root {
-    /* Primary: #589AF2 -> HSL(214, 86%, 64%) */
-    --background: 205 68% 95.1%; /* #E9F4FC */
-    --foreground: 214 40% 10%;
+    /* Wisdom Warehouse Branding: Warm Orange & Creative Slate */
+    --background: 30 20% 98%; /* Warm off-white */
+    --foreground: 210 20% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 214 40% 10%;
+    --card-foreground: 210 20% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 214 40% 10%;
-    --primary: 214 86% 64%;
+    --popover-foreground: 210 20% 15%;
+    --primary: 28 92% 54%; /* Wisdom Orange #F39200 */
     --primary-foreground: 0 0% 100%;
-    --secondary: 245 89% 95%;
-    --secondary-foreground: 245 89% 30%;
-    --muted: 214 20% 90%;
-    --muted-foreground: 214 20% 40%;
-    --accent: 245 89% 72%; /* #857AF7 */
+    --secondary: 45 92% 95%;
+    --secondary-foreground: 28 92% 20%;
+    --muted: 210 10% 90%;
+    --muted-foreground: 210 10% 40%;
+    --accent: 190 80% 45%; /* Creative Teal */
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 214 30% 85%;
-    --input: 214 30% 85%;
-    --ring: 214 86% 64%;
-    --radius: 0.75rem;
+    --border: 210 15% 85%;
+    --input: 210 15% 85%;
+    --ring: 28 92% 54%;
+    --radius: 1rem;
   }
   .dark {
-    --background: 214 40% 5%;
-    --foreground: 214 10% 95%;
-    --card: 214 40% 10%;
-    --card-foreground: 214 10% 95%;
-    --popover: 214 40% 10%;
-    --popover-foreground: 214 10% 95%;
-    --primary: 214 86% 64%;
+    --background: 210 20% 5%;
+    --foreground: 210 10% 95%;
+    --card: 210 20% 10%;
+    --card-foreground: 210 10% 95%;
+    --popover: 210 20% 10%;
+    --popover-foreground: 210 10% 95%;
+    --primary: 28 92% 54%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 245 40% 20%;
-    --secondary-foreground: 245 89% 72%;
-    --muted: 214 30% 20%;
-    --muted-foreground: 214 10% 70%;
-    --accent: 245 89% 72%;
+    --secondary: 210 20% 15%;
+    --secondary-foreground: 28 92% 70%;
+    --muted: 210 20% 20%;
+    --muted-foreground: 210 10% 70%;
+    --accent: 190 80% 45%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 214 30% 20%;
-    --input: 214 30% 20%;
-    --ring: 214 86% 64%;
+    --border: 210 15% 20%;
+    --input: 210 15% 20%;
+    --ring: 28 92% 54%;
   }
 }
 

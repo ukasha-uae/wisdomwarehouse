@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { GraduationCap, LayoutDashboard, LogOut, Users, User, Heart } from "lucide-react";
+import { Warehouse, LayoutDashboard, LogOut, Users, User, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -22,9 +22,9 @@ export default function Navbar({ role }: { role: 'teacher' | 'parent' | 'guest' 
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <GraduationCap className="text-primary-foreground h-5 w-5" />
+            <Warehouse className="text-primary-foreground h-5 w-5" />
           </div>
-          <span className="font-headline font-bold text-xl text-primary tracking-tight">Maplewood Academy</span>
+          <span className="font-headline font-bold text-xl text-primary tracking-tight">Wisdom Warehouse</span>
         </Link>
 
         <div className="flex items-center space-x-1 md:space-x-4">
