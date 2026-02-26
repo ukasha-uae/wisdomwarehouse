@@ -1,9 +1,11 @@
+
 import type {Metadata} from 'next';
 import './globals.css';
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: 'Wisdom Warehouse | Parent-Teacher Portal',
-  description: 'Where curiosity meets creativity. The official communication bridge for Wisdom Warehouse parents and teachers.',
+  description: 'Where curiosity meets creativity. The official communication bridge for Wisdom Warehouse parents and teachers in Dubai, UAE.',
 };
 
 export default function RootLayout({
@@ -18,7 +20,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased min-h-screen bg-background">{children}</body>
+      <body className="font-body antialiased min-h-screen bg-background">
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }
