@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "painting",
+      "description": "Children painting in class",
+      "imageUrl": "https://picsum.photos/seed/paint/800/600",
+      "imageHint": "children painting"
+    },
+    {
+      "id": "blocks",
+      "description": "Student building with blocks",
+      "imageUrl": "https://picsum.photos/seed/blocks/800/600",
+      "imageHint": "children blocks"
+    },
+    {
+      "id": "playground",
+      "description": "Kids playing on a sunny playground",
+      "imageUrl": "https://picsum.photos/seed/play/800/600",
+      "imageHint": "kids playground"
+    },
+    {
+      "id": "reading",
+      "description": "Teacher reading a storybook",
+      "imageUrl": "https://picsum.photos/seed/read/800/600",
+      "imageHint": "teacher reading"
+    },
+    {
+      "id": "science",
+      "description": "Simple science experiment with water",
+      "imageUrl": "https://picsum.photos/seed/science/800/600",
+      "imageHint": "science experiment"
+    }
+  ]
+}
