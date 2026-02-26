@@ -12,8 +12,30 @@ Wisdom Warehouse is a creative workspace for kids to explore their curiosity and
 - **Email:** hello@wisdomwarehouse.ae
 - **Website:** [wisdomwarehouseuae.com](https://wisdomwarehouseuae.com/)
 
-## Repository
-This project is tracked at: `https://github.com/ukasha-uae/wisdomwarehouse`
+## How to push to GitHub
+To push this project to your repository, run the following commands in your terminal:
+
+1. **Initialize Git** (if not already done):
+   ```bash
+   git init
+   ```
+
+2. **Add the remote repository**:
+   ```bash
+   git remote add origin https://github.com/ukasha-uae/wisdomwarehouse
+   ```
+
+3. **Stage and commit your changes**:
+   ```bash
+   git add .
+   git commit -m "Initialize Wisdom Warehouse Portal"
+   ```
+
+4. **Push to the main branch**:
+   ```bash
+   git branch -M main
+   git push -u origin main
+   ```
 
 ## Features
 - **Teacher Dashboard:** Create updates and share classroom moments.
