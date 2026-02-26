@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -76,7 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Identity Section - Explicitly pulled from wisdomwarehouseuae.com */}
+      {/* Contact Section */}
       <section className="bg-white py-20 border-t border-b overflow-hidden">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
