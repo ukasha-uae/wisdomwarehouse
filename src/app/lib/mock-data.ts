@@ -46,7 +46,7 @@ export const MOCK_POSTS: Post[] = [
 export const MOCK_TEACHER = {
   id: 't1',
   name: 'Sarah Mentor',
-  email: 'sarah@wisdomwarehouse.ae',
+  email: 'admin@wisdomwarehousedubai.com',
   role: 'teacher'
 };
 

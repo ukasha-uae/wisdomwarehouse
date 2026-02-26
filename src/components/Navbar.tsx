@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Warehouse, LayoutDashboard, LogOut, Users, User, Heart } from "lucide-react";
+import { LayoutDashboard, LogOut, Users, User, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -21,9 +22,13 @@ export default function Navbar({ role }: { role: 'teacher' | 'parent' | 'guest' 
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <Warehouse className="text-primary-foreground h-5 w-5" />
-          </div>
+          <Image
+            src="/wisdom-warehouse-logo-dark.png"
+            alt="Wisdom Warehouse logo"
+            width={32}
+            height={32}
+            className="h-8 w-8 rounded-lg object-contain"
+          />
           <span className="font-headline font-bold text-xl text-primary tracking-tight">Wisdom Warehouse</span>
         </Link>
 

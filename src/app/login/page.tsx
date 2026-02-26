@@ -1,8 +1,9 @@
 "use client";
 
 import { useSearchParams, useRouter } from "next/navigation";
+import Image from "next/image";
 import { useState } from "react";
-import { Warehouse, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -29,12 +30,16 @@ export default function LoginPage() {
       <Card className="w-full max-w-md border-none shadow-xl">
         <CardHeader className="text-center pb-2">
           <div className="flex justify-center mb-4">
-            <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center shadow-lg">
-              <Warehouse className="text-primary-foreground h-8 w-8" />
-            </div>
+            <Image
+              src="/wisdom-warehouse-logo-dark.png"
+              alt="Wisdom Warehouse logo"
+              width={56}
+              height={56}
+              className="h-14 w-14 rounded-2xl object-contain shadow-lg"
+            />
           </div>
           <CardTitle className="font-headline text-3xl font-bold">Wisdom Warehouse</CardTitle>
-          <CardDescription>Secure login for our creative community</CardDescription>
+          <CardDescription>Secure login for our holistic learning community</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex bg-muted p-1 rounded-lg mb-8">
@@ -55,7 +60,7 @@ export default function LoginPage() {
           <form onSubmit={handleLogin} className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Email Address</Label>
-              <Input id="email" type="email" placeholder="yourname@wisdomwarehouse.ae" required defaultValue={role === 'teacher' ? 'sarah@wisdomwarehouse.ae' : 'john@gmail.com'} />
+              <Input id="email" type="email" placeholder="yourname@example.com" required defaultValue={role === 'teacher' ? 'admin@wisdomwarehousedubai.com' : 'parent@example.com'} />
             </div>
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>

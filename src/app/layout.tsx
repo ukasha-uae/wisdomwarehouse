@@ -4,8 +4,9 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Wisdom Warehouse | Parent-Teacher Portal',
-  description: 'Where curiosity meets creativity. The official communication bridge for Wisdom Warehouse parents and teachers in Dubai, UAE.',
+  title: 'Wisdom Warehouse | Reimagining Education',
+  description:
+    'Wisdom Warehouse is a holistic learning space in Dubai that supports every child through personalised mentorship, hands-on learning, and emotional resilience.',
 };
 
 export default function RootLayout({
