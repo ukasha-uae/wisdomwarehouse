@@ -60,3 +60,30 @@
     @apply font-headline;
   }
 }
+
+@layer components {
+  .neo-glam-bg {
+    background:
+      radial-gradient(circle at 15% 20%, rgba(243, 146, 0, 0.12), transparent 45%),
+      radial-gradient(circle at 85% 10%, rgba(17, 173, 196, 0.10), transparent 45%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 248, 252, 0.98));
+  }
+
+  .neo-glam-card {
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.72));
+    backdrop-filter: blur(10px);
+    box-shadow:
+      14px 14px 28px rgba(15, 23, 42, 0.12),
+      -10px -10px 24px rgba(255, 255, 255, 0.9);
+  }
+
+  .neo-glam-soft {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(8px);
+    box-shadow:
+      10px 10px 20px rgba(15, 23, 42, 0.08),
+      -8px -8px 16px rgba(255, 255, 255, 0.9);
+  }
+}

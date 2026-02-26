@@ -1,8 +1,8 @@
 "use client";
 
-import { useSearchParams, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -10,11 +10,17 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 export default function LoginPage() {
-  const searchParams = useSearchParams();
   const router = useRouter();
-  const initialRole = searchParams.get('role') || 'teacher';
-  const [role, setRole] = useState(initialRole);
+  const [role, setRole] = useState("teacher");
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const search = new URLSearchParams(window.location.search);
+    const fromQuery = search.get("role");
+    if (fromQuery === "teacher" || fromQuery === "parent") {
+      setRole(fromQuery);
+    }
+  }, []);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();

@@ -2,16 +2,16 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Camera, Heart, ShieldCheck, MapPin, Phone, Mail, Sparkles, Instagram, Clock } from "lucide-react";
+import { Camera, Heart, ShieldCheck, MapPin, Phone, Mail, Sparkles, Instagram, Clock, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-background to-white">
+    <div className="neo-glam-bg min-h-screen flex flex-col">
       {/* Hero Section */}
-      <header className="container mx-auto px-4 pt-20 pb-16 text-center">
-        <div className="inline-flex items-center justify-center p-4 mb-8 bg-primary/10 rounded-3xl">
+      <header className="container mx-auto px-4 pt-16 pb-12 text-center">
+        <div className="inline-flex items-center justify-center p-4 mb-8 rounded-3xl neo-glam-card">
           <Image
             src="/wisdom-warehouse-logo-dark.png"
             alt="Wisdom Warehouse logo"
@@ -40,14 +40,35 @@ export default function Home() {
             </Button>
           </Link>
         </div>
+
+        <div className="mt-10 grid gap-4 md:grid-cols-3 text-left">
+          <Card className="neo-glam-soft border-none">
+            <CardContent className="p-4">
+              <p className="text-xs uppercase tracking-wide text-muted-foreground">Parent Visibility</p>
+              <p className="text-lg font-bold">Photo updates + acknowledgments</p>
+            </CardContent>
+          </Card>
+          <Card className="neo-glam-soft border-none">
+            <CardContent className="p-4">
+              <p className="text-xs uppercase tracking-wide text-muted-foreground">Teacher Workflow</p>
+              <p className="text-lg font-bold">Fast uploads, tagged students, clear highlights</p>
+            </CardContent>
+          </Card>
+          <Card className="neo-glam-soft border-none">
+            <CardContent className="p-4">
+              <p className="text-xs uppercase tracking-wide text-muted-foreground">Quality Standard</p>
+              <p className="text-lg font-bold">Secure, timely, premium family communication</p>
+            </CardContent>
+          </Card>
+        </div>
       </header>
 
       {/* Features Grid */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 py-10">
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="border-none shadow-sm bg-primary/5 hover:bg-primary/10 transition-colors">
+          <Card className="neo-glam-card border-none shadow-sm">
             <CardContent className="pt-8 text-center space-y-4">
-              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mx-auto">
+              <div className="w-12 h-12 neo-glam-soft rounded-xl flex items-center justify-center mx-auto">
                 <Camera className="text-primary h-6 w-6" />
               </div>
               <h3 className="font-headline font-bold text-xl">Daily Moments</h3>
@@ -57,9 +78,9 @@ export default function Home() {
             </CardContent>
           </Card>
           
-          <Card className="border-none shadow-sm bg-accent/5 hover:bg-accent/10 transition-colors">
+          <Card className="neo-glam-card border-none shadow-sm">
             <CardContent className="pt-8 text-center space-y-4">
-              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mx-auto">
+              <div className="w-12 h-12 neo-glam-soft rounded-xl flex items-center justify-center mx-auto">
                 <ShieldCheck className="text-accent h-6 w-6" />
               </div>
               <h3 className="font-headline font-bold text-xl">Secure Portfolio</h3>
@@ -69,9 +90,9 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <Card className="border-none shadow-sm bg-primary/5 hover:bg-primary/10 transition-colors">
+          <Card className="neo-glam-card border-none shadow-sm">
             <CardContent className="pt-8 text-center space-y-4">
-              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mx-auto">
+              <div className="w-12 h-12 neo-glam-soft rounded-xl flex items-center justify-center mx-auto">
                 <Sparkles className="text-primary h-6 w-6" />
               </div>
               <h3 className="font-headline font-bold text-xl">Holistic Learning</h3>
@@ -83,10 +104,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="container mx-auto px-4 py-8">
+        <Card className="neo-glam-card border-none">
+          <CardContent className="p-6 grid gap-3 md:grid-cols-3">
+            {[
+              "Teachers share meaningful progress moments",
+              "Parents acknowledge updates in one tap",
+              "Every post builds a trusted learning timeline",
+            ].map((item) => (
+              <p key={item} className="text-sm text-foreground/85 flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-primary mt-0.5" />
+                {item}
+              </p>
+            ))}
+          </CardContent>
+        </Card>
+      </section>
+
       {/* Contact Section */}
-      <section className="bg-white py-20 border-t border-b overflow-hidden">
+      <section className="py-16 overflow-hidden">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 neo-glam-card rounded-3xl p-8">
             <div>
               <h2 className="text-4xl font-headline font-bold text-primary mb-2">Visit Our Warehouse</h2>
               <div className="w-20 h-1 bg-accent rounded-full"></div>
@@ -94,7 +132,7 @@ export default function Home() {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4 group">
-                <div className="p-3 bg-primary/10 rounded-xl group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="p-3 neo-glam-soft rounded-xl group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   <MapPin className="h-6 w-6" />
                 </div>
                 <div>
@@ -104,7 +142,7 @@ export default function Home() {
               </div>
               
               <div className="flex items-start gap-4 group">
-                <div className="p-3 bg-primary/10 rounded-xl group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="p-3 neo-glam-soft rounded-xl group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   <Phone className="h-6 w-6" />
                 </div>
                 <div>
@@ -114,7 +152,7 @@ export default function Home() {
               </div>
               
               <div className="flex items-start gap-4 group">
-                <div className="p-3 bg-primary/10 rounded-xl group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="p-3 neo-glam-soft rounded-xl group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   <Mail className="h-6 w-6" />
                 </div>
                 <div>
@@ -124,7 +162,7 @@ export default function Home() {
               </div>
 
               <div className="flex items-start gap-4 group">
-                <div className="p-3 bg-primary/10 rounded-xl group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="p-3 neo-glam-soft rounded-xl group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   <Clock className="h-6 w-6" />
                 </div>
                 <div>
@@ -145,16 +183,15 @@ export default function Home() {
             <div className="flex items-center gap-4 pt-4">
               <p className="text-sm font-bold text-muted-foreground uppercase tracking-wider">Follow our journey</p>
               <Link href="https://www.instagram.com/wisdom_warehouse/" target="_blank">
-                <Button variant="ghost" size="icon" className="rounded-full bg-primary/5 hover:bg-primary/20">
+                <Button variant="ghost" size="icon" className="rounded-full neo-glam-soft hover:bg-primary/20">
                   <Instagram className="h-5 w-5 text-primary" />
                 </Button>
               </Link>
             </div>
           </div>
           
-          <div className="relative">
-            <div className="absolute -inset-4 bg-primary/10 rounded-[3rem] rotate-2"></div>
-            <div className="relative aspect-video rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
+          <div className="relative neo-glam-card rounded-[2.5rem] p-3">
+            <div className="relative aspect-video rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/70">
               <Image
                 src="/wisdom-warehouse-about-us.jpg"
                 alt="Wisdom Warehouse learning environment"
@@ -168,7 +205,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-muted/30">
+      <footer className="py-12">
         <div className="container mx-auto px-4 text-center">
           <div className="flex justify-center mb-6">
             <Image
